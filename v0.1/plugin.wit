@@ -42,6 +42,8 @@ world plugin {
     import java-dialogs;
     /// Provides status effect types and instances.
     import status-effect;
+    /// Provides a plugin configuration API.
+    import config;
 
     // --- Plugin-provided exports ---
 

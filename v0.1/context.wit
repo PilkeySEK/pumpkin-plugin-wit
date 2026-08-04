@@ -4,6 +4,7 @@ interface context {
     use event.{event-type, event-priority};
     use command.{command};
     use permission.{permission};
+    use config.{config};
 
     /// A contextual handle for plugin-related operations.
     resource context {
@@ -29,5 +30,8 @@ interface context {
 
         /// Returns the global server instance.
         get-server: func() -> server;
+
+        /// Returns the plugin's config.
+        get-config: func() -> config;
     }
 }
